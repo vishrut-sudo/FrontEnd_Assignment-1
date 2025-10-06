@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Front End Development ---- Assignment by Vishrut Sharma</title>
+  <style>
+    body {
+      background: #fffbe0; /* soft yellow */
+      font-family: Arial, sans-serif;
+      color: #2e2c2c;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #228b22; /* forest green */
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    main {
+      max-width: 440px;
+      margin: 40px auto;
+      background: #cdefc1; /* gentle green */
+      border-radius: 8px;
+      padding: 24px 20px;
+      box-shadow: 2px 2px 20px rgba(120, 80, 80, 0.09);
+    }
+    .button {
+      background: #ffea00; /* yellow */
+      color: #222;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 18px;
+      font-size: 16px;
+      margin-top: 16px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background: #ffe577;
+    }
+    .output {
+      margin-top: 12px;
+      color: #00a97f;
+      font-weight: bold;
+    }
+    a {
+      color: #e84118; /* reddish */
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px dashed #e84118;
+    }
+  </style>
+</head>
+<body>
+  <header>/front end development ---- assignment by Vishrut Sharma</header>
+  <main>
+    <h2 style="color:#228b22;">Hello!</h2>
+    <p>This is my assignment page where I combined HTML, CSS, and a little JavaScript.</p>
+    <button class="button" onclick="showMessage()">Click Me 😊</button>
+    <div class="output" id="output"></div>
+    <p>
+      Take a look at this <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb" target="_blank" rel="noopener noreferrer">nice photo</a>.<br />
+      Also, check out <a href="Vishrut_Sharma-Second.html">my second page</a>!
+    </p>
+  </main>
+  <script>
+    function showMessage() {
+      document.getElementById('output').textContent = "meow meow meow meow";
+    }
+  </script>
+</body>
+</html>
