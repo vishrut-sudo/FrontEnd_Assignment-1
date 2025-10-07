@@ -4,63 +4,130 @@
   <meta charset="UTF-8" />
   <title>Second Page - Assignment by Vishrut</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      background: #ffe3ee; /* very light pink */
-      font-family: Arial, sans-serif;
-      color: #363636;
+      background: #f9f8ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #263320;
       margin: 0;
       padding: 0;
+      font-size: 18px;
+      line-height: 1.5;
     }
     header {
-      background: #228b22; /* forest green */
-      color: #363636;
+      background: #228b22;
+      color: #f0f7ea;
       text-align: center;
+      padding: 28px 15px;
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      box-shadow: 0 4px 9px rgba(17, 50, 23, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      background: #2e7b33;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
       padding: 18px 0;
-      font-size: 1.6rem;
-      letter-spacing: 1px;
+      box-shadow: 0 6px 15px rgba(56, 102, 35, 0.55);
+      position: sticky;
+      top: 88px;
+      z-index: 999;
+    }
+    nav a {
+      color: #d7f4cf;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffee5f;
+      text-decoration: underline;
     }
     main {
-      max-width: 400px;
-      margin: 32px auto;
-      padding: 20px;
-      background: #d4ffea; /* light green */
-      border-radius: 8px;
-      box-shadow: 2px 2px 18px rgba(30, 120, 30, 0.07);
+      max-width: 900px;
+      margin: 110px auto 60px auto;
+      padding: 40px;
+      background: #c6e2b3;
+      border-radius: 20px;
+      box-shadow: 0 5px 25px rgba(34, 77, 16, 0.35);
+    }
+    main h3 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #1b3a17;
+      letter-spacing: 1.2px;
     }
     ul {
-      margin-top: 14px;
-      color: #d7263d;
+      margin-bottom: 30px;
+      color: #7a3a34;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 25px auto;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(27, 58, 23, 0.7);
+    }
+    p {
+      font-size: 1.15rem;
+      color: #234d20;
+      text-align: justify;
+      margin-top: 25px;
     }
     .highlight {
-      background: #fff176; /* lemon yellow */
-      padding: 16px;
-      margin-top: 18px;
-      border-radius: 4px;
-      font-size: 1.1rem;
+      background: #fff176;
+      padding: 18px;
+      margin-top: 30px;
+      border-radius: 10px;
+      font-size: 1.2rem;
       text-align: center;
-      color: #227e3b;
+      color: #2e4b18;
+      font-weight: 700;
     }
-    a {
-      color: #228b22; /* forest green */
-      text-decoration: underline;
-      font-weight: bold;
+    footer {
+      text-align: center;
+      font-size: 1rem;
+      padding: 18px 0;
+      color: #2e4b18;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
   <header>Second Page – Assignment by Vishrut</header>
+  <nav>
+    <a href="Vishrut_Sharma-Assignment.html">Home</a>
+    <a href="Vishrut_Sharma-Second.html">Engine Info</a>
+  </nav>
   <main>
-    <h3 style="color:#228b22;">Here’s what’s on this page:</h3>
+    <h3>Info About Fighter Plane Engines</h3>
     <ul>
-      <li>Simple colors and clean design</li>
-      <li>HTML elements and styles used</li>
-      <li>Link to go back to the main page</li>
+      <li>Modern engines provide supersonic speeds</li>
+      <li>Advanced materials withstand high temperatures</li>
+      <li>Engines designed for maneuverability and power</li>
     </ul>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Aircraft-engine-1994.jpg" alt="Plane Engine" />
+
+    <p>
+      Fighter plane engines are among the most advanced propulsion systems, combining efficiency and immense thrust. They use turbojet or turbofan technology to generate the incredible power needed for rapid acceleration, sharp turns, and sustained supersonic flight. Materials like titanium and composites resist extreme heat and pressure inside the engine. Engineers continuously improve these engines to enhance performance, fuel efficiency, and combat readiness, ensuring fighter planes maintain their edge in aerial warfare.
+    </p>
+
     <div class="highlight">
       Today is: <span id="date"></span>
     </div>
-    <p style="color:#d7263d;">meow meow meow meow</p>
   </main>
+  <footer>© 2025 Vishrut Sharma</footer>
   <script>
     document.getElementById('date').textContent = new Date().toDateString();
   </script>

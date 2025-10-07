@@ -4,67 +4,149 @@
   <meta charset="UTF-8" />
   <title>Front End Development ---- Assignment by Vishrut Sharma</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      background: #fffbe0; /* soft yellow */
-      font-family: Arial, sans-serif;
-      color: #2e2c2c;
+      background: #fff9db;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1b3a17;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
+      font-size: 18px;
     }
     header {
-      background: #228b22; /* forest green */
+      background: #2c6e49;
       color: #fff;
-      padding: 20px 0;
+      padding: 30px 20px;
       text-align: center;
-      font-size: 2rem;
-      letter-spacing: 1px;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 8px rgba(17, 50, 23, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      background: #3a7d44;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      position: sticky;
+      top: 88px;
+      z-index: 999;
+      box-shadow: 0 4px 6px rgba(122, 178, 106, 0.6);
+    }
+    nav a {
+      color: #e6f2d9;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd43b;
+      text-decoration: underline;
     }
     main {
-      max-width: 440px;
-      margin: 40px auto;
-      background: #cdefc1; /* gentle green */
-      border-radius: 8px;
-      padding: 24px 20px;
-      box-shadow: 2px 2px 20px rgba(120, 80, 80, 0.09);
+      max-width: 900px;
+      margin: 100px auto 50px auto;
+      background: #b8d99f;
+      padding: 40px 40px 50px 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(42, 88, 15, 0.3);
+    }
+    main h2 {
+      font-size: 2.4rem;
+      color: #254a00;
+      margin-bottom: 20px;
+      letter-spacing: 1.5px;
+    }
+    main p {
+      font-size: 1.2rem;
+      margin-bottom: 28px;
+      color: #2e4600;
+      text-align: justify;
+    }
+    main img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(35, 70, 7, 0.8);
     }
     .button {
-      background: #ffea00; /* yellow */
-      color: #222;
+      background: #ffe600;
+      color: #254a00;
       border: none;
-      border-radius: 4px;
-      padding: 10px 18px;
-      font-size: 16px;
-      margin-top: 16px;
+      border-radius: 8px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: 700;
       cursor: pointer;
+      box-shadow: 0 5px 14px rgba(255, 230, 0, 0.7);
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin-top: 10px;
+      display: block;
+      width: 180px;
+      text-align: center;
     }
     .button:hover {
-      background: #ffe577;
+      background: #f2cc00;
+      transform: scale(1.05);
     }
     .output {
-      margin-top: 12px;
-      color: #00a97f;
-      font-weight: bold;
+      margin-top: 20px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #19560e;
+      text-align: center;
     }
-    a {
-      color: #e84118; /* reddish */
-      text-decoration: none;
-      font-weight: bold;
-      border-bottom: 1px dashed #e84118;
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1rem;
+      color: #19560e;
+      letter-spacing: 1px;
+    }
+    a.external-link {
+      color: #003300;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    a.external-link:hover {
+      color: #ffcc00;
     }
   </style>
 </head>
 <body>
   <header>/front end development ---- assignment by Vishrut Sharma</header>
+  <nav>
+    <a href="Vishrut_Sharma-Assignment.html">Home</a>
+    <a href="Vishrut_Sharma-Second.html">Engine Info</a>
+  </nav>
   <main>
-    <h2 style="color:#228b22;">Hello!</h2>
+    <h2>Hello!</h2>
     <p>This is my assignment page where I combined HTML, CSS, and a little JavaScript.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/105_Polish_Air_Force_MiG-29A_Fulcrum_ILA_Berlin_2016_10.jpg" alt="Fighter Plane" />
+
+    <p>
+      Fighter planes are incredibly fast and agile aircraft designed primarily for air superiority and tactical combat. Their powerful engines enable supersonic speeds and rapid maneuvers to outsmart enemy aircraft. Equipped with advanced radar, avionics, and weaponry including missiles and guns, fighter jets play a crucial role in national defense and strike missions. These planes are technical marvels combining stealth, speed, and precision. Their stunning designs and cutting-edge systems make them a vital asset in modern aerial warfare and security.
+    </p>
+
     <button class="button" onclick="showMessage()">Click Me 😊</button>
     <div class="output" id="output"></div>
+
     <p>
-      Take a look at this <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb" target="_blank" rel="noopener noreferrer">nice photo</a>.<br />
-      Also, check out <a href="Vishrut_Sharma-Second.html">my second page</a>!
+      Check out this <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb" target="_blank" rel="noopener noreferrer" class="external-link">thought-provoking photo</a> or visit my <a href="Vishrut_Sharma-Second.html" class="external-link">second page for engine info</a>.
     </p>
   </main>
+  <footer>© 2025 Vishrut Sharma</footer>
   <script>
     function showMessage() {
       document.getElementById('output').textContent = "meow meow meow meow";
